@@ -1,0 +1,10 @@
+type TestModel {
+    id: ID!,
+    someField: String
+}
+type Query {
+    getTestModel(id: ID): TestModel
+}
+type Mutation {
+    changeTestModel(id: ID): Boolean
+}
